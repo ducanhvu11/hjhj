@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike VN</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="left">
+        <span>Jordan</span>
+      </div>
+      <div class="right">
+        <a href="#">Find a Store</a>
+        <a href="#">Help</a>
+        <a href="#">Join Us</a>
+        <a href="#" onclick="showTab('login')">Sign In</a>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="main-nav">
+      <img
+        src="https://1000logos.net/wp-content/uploads/2017/03/Nike-Logo.png"
+        class="logo"
+        alt="Nike Logo"
+      />
+      <ul class="menu">
+        <li><a href="#">New & Featured</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#" onclick="showTab('sale')">Sale</a></li>
+      </ul>
+      <div class="actions">
+        <input type="text" placeholder="Search" />
+        <span>♡</span>
+        <span>🛒</span>
+      </div>
+    </nav>
+
+    <!-- Promo -->
+    <div class="promo">
+      Move, Shop, Customise & Celebrate With Us –
+      <a href="#">Join Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <img src="6800fa35-35fc-4ae1-8ad7-200839ec1212.png" alt="Nike Hero" />
+    </div>
+
+    <!-- Tabs -->
+    <div class="tab-content">
+      <!-- Login -->
+      <div id="login" class="tab-pane">
+        <div class="form-container">
+          <h2>Đăng nhập</h2>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Mật khẩu" />
+          <button>Đăng nhập</button>
+          <p>
+            Chưa có tài khoản?
+            <a href="#" onclick="showTab('register')">Đăng ký</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Register -->
+      <div id="register" class="tab-pane">
+        <div class="form-container">
+          <h2>Đăng ký</h2>
+          <input type="text" placeholder="Họ và tên" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Mật khẩu" />
+          <input type="password" placeholder="Xác nhận mật khẩu" />
+          <button>Đăng ký</button>
+          <p>
+            Đã có tài khoản?
+            <a href="#" onclick="showTab('login')">Đăng nhập</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showTab(id) {
+        document
+          .querySelectorAll(".tab-pane")
+          .forEach((p) => (p.style.display = "none"));
+        document.getElementById(id).style.display = "block";
+        window.scrollTo(0, document.body.scrollHeight);
+      }
+    </script>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4>Sản phẩm</h4>
+          <ul>
+            <li><a href="#">Giày</a></li>
+            <li><a href="#">Quần áo</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+            <li><a href="#">Hàng mới về</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="#">Trung tâm trợ giúp</a></li>
+            <li><a href="#">Vận chuyển</a></li>
+            <li><a href="#">Trả hàng</a></li>
+            <li><a href="#">Tình trạng đơn hàng</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Về Nike</h4>
+          <ul>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Nghề nghiệp</a></li>
+            <li><a href="#">Đầu tư</a></li>
+            <li><a href="#">Bền vững</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nike, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -126,19 +126,110 @@ a {
   background: #f39c12;
 }
 
-.sale-title {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 30px;
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
   font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #aaa;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #888;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+}
+.sale-section {
+  padding: 40px 20px;
+}
+
+.sale-header {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.sale-announcement {
+  font-size: 14px;
+  color: #333;
+}
+
+.sale-announcement a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.sale-body {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.sale-sidebar {
+  flex: 0 0 200px;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+}
+
+.sale-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sale-sidebar li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #111;
+  cursor: pointer;
+}
+
+.sale-sidebar li:hover {
+  text-decoration: underline;
+}
+
+.sale-products {
+  flex: 1;
 }
 
 .sale-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .sale-card {
@@ -197,52 +288,4 @@ a {
 .sale-card .price .discount {
   color: #27ae60;
   font-weight: 600;
-}
-.footer {
-  background: #111;
-  color: #fff;
-  padding: 40px 20px 20px;
-  margin-top: 60px;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-col h4 {
-  font-size: 16px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-col ul li {
-  margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-  color: #aaa;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-  color: #fff;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  font-size: 13px;
-  color: #888;
-  border-top: 1px solid #333;
-  margin-top: 30px;
 }

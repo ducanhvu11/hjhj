@@ -57,80 +57,67 @@
     </div>
 
     <!-- Tabs -->
-    <div class="tab-content">
-      <!-- Login -->
-      <div id="login" class="tab-pane">
-        <div class="form-container">
-          <h2>Đăng nhập</h2>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Mật khẩu" />
-          <button>Đăng nhập</button>
-          <p>
-            Chưa có tài khoản?
-            <a href="#" onclick="showTab('register')">Đăng ký</a>
-          </p>
-        </div>
-      </div>
-
-      <!-- Register -->
-      <div id="register" class="tab-pane">
-        <div class="form-container">
-          <h2>Đăng ký</h2>
-          <input type="text" placeholder="Họ và tên" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Mật khẩu" />
-          <input type="password" placeholder="Xác nhận mật khẩu" />
-          <button>Đăng ký</button>
-          <p>
-            Đã có tài khoản?
-            <a href="#" onclick="showTab('login')">Đăng nhập</a>
-          </p>
-        </div>
-      </div>
+<div class="tab-content">
+  <!-- Login -->
+  <div id="login" class="tab-pane">
+    <div class="form-container">
+      <h2>Đăng nhập</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Mật khẩu" />
+      <button>Đăng nhập</button>
+      <p>Chưa có tài khoản? <a href="#" onclick="showTab('register')">Đăng ký</a></p>
     </div>
+  </div>
 
-    <script>
-      function showTab(id) {
-        document
-          .querySelectorAll(".tab-pane")
-          .forEach((p) => (p.style.display = "none"));
-        document.getElementById(id).style.display = "block";
-        window.scrollTo(0, document.body.scrollHeight);
-      }
-    </script>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-col">
-          <h4>Sản phẩm</h4>
-          <ul>
-            <li><a href="#">Giày</a></li>
-            <li><a href="#">Quần áo</a></li>
-            <li><a href="#">Phụ kiện</a></li>
-            <li><a href="#">Hàng mới về</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Hỗ trợ</h4>
-          <ul>
-            <li><a href="#">Trung tâm trợ giúp</a></li>
-            <li><a href="#">Vận chuyển</a></li>
-            <li><a href="#">Trả hàng</a></li>
-            <li><a href="#">Tình trạng đơn hàng</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Về Nike</h4>
-          <ul>
-            <li><a href="#">Tin tức</a></li>
-            <li><a href="#">Nghề nghiệp</a></li>
-            <li><a href="#">Đầu tư</a></li>
-            <li><a href="#">Bền vững</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Nike, Inc. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+  <!-- Register -->
+  <div id="register" class="tab-pane">
+    <div class="form-container">
+      <h2>Đăng ký</h2>
+      <input type="text" placeholder="Họ và tên" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Mật khẩu" />
+      <input type="password" placeholder="Xác nhận mật khẩu" />
+      <button>Đăng ký</button>
+      <p>Đã có tài khoản? <a href="#" onclick="showTab('login')">Đăng nhập</a></p>
+    </div>
+  </div>
+
+  <!-- Sale -->
+  
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Sản phẩm</h4>
+      <ul>
+        <li><a href="#">Giày</a></li>
+        <li><a href="#">Quần áo</a></li>
+        <li><a href="#">Phụ kiện</a></li>
+        <li><a href="#">Hàng mới về</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hỗ trợ</h4>
+      <ul>
+        <li><a href="#">Trung tâm trợ giúp</a></li>
+        <li><a href="#">Vận chuyển</a></li>
+        <li><a href="#">Trả hàng</a></li>
+        <li><a href="#">Tình trạng đơn hàng</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Về Nike</h4>
+      <ul>
+        <li><a href="#">Tin tức</a></li>
+        <li><a href="#">Nghề nghiệp</a></li>
+        <li><a href="#">Đầu tư</a></li>
+        <li><a href="#">Bền vững</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Nike, Inc. All rights reserved.</p>
+  </div>
+</footer>
 </html>
